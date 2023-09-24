@@ -1,38 +1,177 @@
-.App {
-  text-align: center;
+.screen1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: white;
+  flex-wrap: wrap;
+ 
+
+ 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.image1{
+  max-width: 100%;
+  height: auto; 
+  display: flex;
 }
+.logo{
+  
+  align-items: center;
+  justify-content: center;
+  max-width: 100%;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn-screen1{
+  background-color: rgb(244, 200, 111);
+ justify-content: center;
+ display: flex;
+ width: 90%;
+ padding-top: 0.625rem;
+ gap: 0.25rem;
+ padding-bottom: 0.625rem;
+ border-radius: 1.6rem;
+ gap: 1;
+ color: white;
+ margin-top: 1rem;
+ cursor: pointer;
+ border: white;
+}
+.welcome{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.welcome h1{
+  font-weight: 600;
+ margin-bottom: -0.5rem;
+ margin-top: 2.5rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.welcome p{
+  color: rgb(137, 137, 137);
+  
+}
+PhoneInput{
+  justify-content: center;
+  color: blue;
+  background-color: blueviolet;
+}
+
+.border-text{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  
+  /* min-height: 100vh; */
+margin: 0.8rem;
+  position: relative;
+  outline: none;
+  border: 1.2px solid  rgb(244, 200, 111);
+}
+
+.phone{
+  width: 100%;
+  padding: 10px;
+  border: 2px solid blue;
+  background-color: blueviolet;
+}
+.border-text span{
+  position : absolute;
+  left:0;
+  padding: 4px;
+  pointer-events: none;
+  font-size: 0.6em;
+  transform: 0.5s;
+  transform: translateY(-1.1rem) translateX(1.2rem);
+  background-color: white;
+  font-weight: 600;
+ 
+ color: rgb(157, 156, 156);
+}
+
+.welcome2 p{
+ display: flex;
+ justify-content: center;
+ margin-top: -0.9rem;
+
+}
+.welcome3{
+  font-size: small;
+}
+
+@media screen and (max-width: 768px) {
+  .screen1 {
+     align-items: center;
+     
   }
-  to {
-    transform: rotate(360deg);
+.logo{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+  .welcome h1 {
+     font-size: xx-large;
+      margin-top: 6.7rem; 
   }
+
+  .welcome p {
+      font-size: larger;
+  }
+
+  .phone {
+      padding: 8px; 
+  }
+  .border-text{
+    margin: 2rem;
+  }
+
+  .border-text span {
+      transform: translateY(-1rem) translateX(1rem); 
+      
+  }
+  .welcome2 p {
+      margin-top: -0.7rem; 
+  }
+}
+
+@media screen and (max-width: 400px){
+  .welcome h1 {
+    font-size: x-large;
+     
+ }
+ .border-text{
+  max-width: 60%;
+ 
+  
+}
+.image1{
+  max-width: 60%;
+  
+}
+.welcome3{
+  flex-wrap: wrap;
+}
+.welcome3{
+  
+}
+.btn-screen1{
+  width: 60%;
+}
+.page1{
+  transform: scale(0.7);
+  display: flex;
+  
+  justify-content: center;
+  align-items: center;
+  max-width: 100%;
+  margin-right: -7rem;
+  margin-top: -7rem;
+  margin-bottom: -2rem;
+
+}
+
 }
