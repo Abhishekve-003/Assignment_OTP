@@ -59,7 +59,7 @@ function App() {
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
-        {user ? (
+        {!user ? (
           <LoginSuccess />
         ) : (
           <div>
