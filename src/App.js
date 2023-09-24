@@ -15,7 +15,7 @@ function App() {
   const [otp, setotp] = useState("");
   const [ph, setPh] = useState("");
   const [loading, setLoading] = useState(false);
-  const [showOTP, setShowOTP] = useState(true);
+  const [showOTP, setShowOTP] = useState(false);
   const [user, setUser] = useState(null);
 
   function onCaptchVerify() {
@@ -59,7 +59,7 @@ function App() {
       <div>
         <Toaster toastOptions={{ duration: 4000 }} />
         <div id="recaptcha-container"></div>
-        {!user ? (
+        {user ? (
           <LoginSuccess />
         ) : (
           <div>
