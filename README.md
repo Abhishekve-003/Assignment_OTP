@@ -4,6 +4,13 @@ In this project, I have used Firebase for the database and React. js for fronten
 **Note: I am using Firebase; it has a limited request quota When the quota is over, you can't get a second page, so when you are visiting, it might happen that you are not on the second page.**
 
 
+## Video of Project
+
+
+https://github.com/Abhishekve-003/Assignment_OTP/assets/125495260/e2dbe3d6-e585-4ec3-addc-02f337be8746
+
+
+
 ## In this first step, you can select your country code
 
 
